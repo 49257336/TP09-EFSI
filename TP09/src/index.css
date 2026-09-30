@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+  --ink: #182720;
+  --muted: #737e76;
+  --red: #df594a;
+  --yellow: #f1cf69;
+  --green: #4b7959;
+  --line: #dce2da;
+  --page: #f5f7f2;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+  --mono: 'DM Mono', Consolas, monospace;
+
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; scroll-behavior: smooth; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-image: radial-gradient(rgba(24, 39, 32, 0.045) 0.7px, transparent 0.7px);
+  background-size: 9px 9px;
+}
+
+button, input { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+::selection { background: var(--yellow); color: var(--ink); }
